@@ -4,17 +4,17 @@ const MenuCard = ({menuData}) => {
     console.log(menuData)
   return (
    <>
+   <div className='container'>
    {
-    <div className='container'>
        menuData.map((curr)=>{
            return (
                <>
-              
+               
            
     
-    <div className='inside'>
-        <p className='items'>Name</p>
-        <p className='items'>Name</p>
+    <div className='inside' key={curr.id}>
+        <p className='items'>{curr.id}</p>
+        <p className='items'>{curr.id}</p>
         <p className='items'>Name</p>
         <p className='items'>Name</p>
         <p className='items'>Name</p>

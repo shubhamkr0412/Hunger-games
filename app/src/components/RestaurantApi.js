@@ -5,8 +5,8 @@ const Menu = [
       name: "maggi",
       category: "breakfast",
       price: "12₹",
-      description:
-        "I love Maggi realy oo yues  Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
+     rating:
+        1,
     },
   
     {
@@ -15,8 +15,8 @@ const Menu = [
       name: "allu pakoida",
       category: "evening",
       price: "20₹",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
+     rating:
+        2,
     },
     {
       id: 3,
@@ -24,8 +24,8 @@ const Menu = [
       name: "corn",
       category: "breakfast",
       price: "10₹",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
+     rating:
+        3,
     },
     {
       id: 4,
@@ -33,8 +33,8 @@ const Menu = [
       name: "chola",
       category: "lunch",
       price: "50₹",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
+     rating:
+        4,
     },
     {
       id: 5,
@@ -42,8 +42,8 @@ const Menu = [
       name: "pizza",
       category: "evening",
       price: "80₹",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
+     rating:
+        5,
     },
     {
       id: 6,
@@ -51,8 +51,8 @@ const Menu = [
       name: "Non-Veg Thali",
       category: "dinner",
       price: "180₹",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
+     rating:
+        1,
     },
     {
       id: 7,
@@ -60,8 +60,8 @@ const Menu = [
       name: "Sweets",
       category: "dinner",
       price: "60₹",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
+     rating:
+        2,
     },
     {
       id: 8,
@@ -69,8 +69,8 @@ const Menu = [
       name: "Rajma Rice",
       category: "lunch",
       price: "60₹",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
+     rating:
+        3,
     },
     {
       id: 9,
@@ -78,8 +78,8 @@ const Menu = [
       name: "samaso",
       category: "evening",
       price: "10₹",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
+     rating:
+        4,
     },
     {
       id: 10,
@@ -87,9 +87,33 @@ const Menu = [
       name: "samaso",
       category: "dessert",
       price: "10₹",
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
+     rating:
+        5,
     },
+    
+      {
+        id: 11,
+        image: "images/maggi.jpg",
+        name: "maggi",
+        category: "breakfast",
+        price: "12₹",
+       rating:
+          1,
+      },
+    
+      {
+        id: 12,
+        image: "images/allupakoida.jpg",
+        name: "allu pakoida",
+        category: "evening",
+        price: "20₹",
+       rating:
+          2,
+      },
+      
+      
+      
+
   ];
   
   export default Menu;
