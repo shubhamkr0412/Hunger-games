@@ -1,32 +1,16 @@
 import React from 'react'
-import "../App.css"
-const Restaurant = () => {
-  return (
-    <><div className='container'>
-        <div className='inside'>
-            <p className='items'>Name</p>
-            <p className='items'>Name</p>
-            <p className='items'>Name</p>
-            <p className='items'>Name</p>
-            <p className='items'>Name</p>
-        </div>
-        <div className='inside'>
-            <p className='items'>Name</p>
-            <p className='items'>Name</p>
-            <p className='items'>Name</p>
-            <p className='items'>Name</p>
-            <p className='items'>Name</p>
-        </div>
-        <div className='inside'>
-            <p className='items'>Name</p>
-            <p className='items'>Name</p>
-            <p className='items'>Name</p>
-            <p className='items'>Name</p>
-            <p className='items'>Name</p>
-        </div>
-       
 
-    </div></>
+import Menu from './RestaurantApi'
+import MenuCard from './MenuCard'
+import { useState } from 'react'
+const Restaurant = () => {
+    const [menuData,setMenuData] = useState(Menu);
+    console.log(menuData);
+  return (
+
+    <>
+<MenuCard menuData={menuData} />
+    </>
   )
 }
 
