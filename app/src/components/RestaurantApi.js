@@ -7,6 +7,7 @@ const Menu = [
       price: "12₹",
      rating:
         1,
+        
     },
   
     {
@@ -17,6 +18,7 @@ const Menu = [
       price: "20₹",
      rating:
         2,
+        
     },
     {
       id: 3,
@@ -26,6 +28,7 @@ const Menu = [
       price: "10₹",
      rating:
         3,
+        
     },
     {
       id: 4,
@@ -35,6 +38,7 @@ const Menu = [
       price: "50₹",
      rating:
         4,
+        
     },
     {
       id: 5,
@@ -44,6 +48,7 @@ const Menu = [
       price: "80₹",
      rating:
         5,
+        
     },
     {
       id: 6,
@@ -53,6 +58,7 @@ const Menu = [
       price: "180₹",
      rating:
         1,
+        
     },
     {
       id: 7,
@@ -62,6 +68,7 @@ const Menu = [
       price: "60₹",
      rating:
         2,
+        
     },
     {
       id: 8,
@@ -71,6 +78,7 @@ const Menu = [
       price: "60₹",
      rating:
         3,
+        
     },
     {
       id: 9,
@@ -80,6 +88,7 @@ const Menu = [
       price: "10₹",
      rating:
         4,
+        
     },
     {
       id: 10,
@@ -89,6 +98,7 @@ const Menu = [
       price: "10₹",
      rating:
         5,
+        
     },
     
       {
@@ -99,6 +109,7 @@ const Menu = [
         price: "12₹",
        rating:
           1,
+          
       },
     
       {
@@ -109,6 +120,7 @@ const Menu = [
         price: "20₹",
        rating:
           2,
+          
       },
       
       

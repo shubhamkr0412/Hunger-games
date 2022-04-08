@@ -13,11 +13,12 @@ const MenuCard = ({menuData}) => {
            
     
     <div className='inside' key={curr.id}>
-        <p className='items'>{curr.id}</p>
-        <p className='items'>{curr.id}</p>
-        <p className='items'>Name</p>
-        <p className='items'>Name</p>
-        <p className='items'>Name</p>
+       
+        <p className='items'>{curr.name}</p>
+        <p className='items'>{curr.category}</p>
+        <p className='items'>{curr.price}</p>
+        <p className='items'>{curr.rating}</p>
+       
     </div>
    
    
