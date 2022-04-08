@@ -14,8 +14,13 @@ const Restaurant = () => {
       setMenuData(updatedList);
       console.log(updatedList)
     }
+
+    const lowToHigh=()=>{
+      Menu.price.sort((a,b)=>(a.price-b.price));
+       setMenuData(Menu);
+    }
     
-    console.log(menuData);
+  
   return (
 
     <>
@@ -28,7 +33,7 @@ const Restaurant = () => {
     <button >Card</button>
     <button >All</button>
     <button >HiToLow</button>
-    <button >LowToHigh</button>
+    <button onClick={lowToHigh}>LowToHigh</button>
     <button >Filter&Sort</button>
     <button >4StarAboveinDes</button>
     <button onClick={()=>filterItem("breakfast")} >Breakfast</button>
