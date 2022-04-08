@@ -1,11 +1,10 @@
 
 import './App.css';
+import Restaurant from './components/Restaurant';
 
 function App() {
   return (
-    <div className="App">
-     
-    </div>
+    <><Restaurant/></>
   );
 }
 
