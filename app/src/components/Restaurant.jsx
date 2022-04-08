@@ -22,10 +22,11 @@ const Restaurant = () => {
        setMenuData(starList);
       
      }
-    // const lowToHigh=()=>{
-    //   Menu.price.sort((a,b)=>(a.price-b.price));
-    //    setMenuData(Menu);
-    // }
+    const lowToHigh=()=>{
+      const sub=Menu.price.sort((a,b)=>(a.price-b.price));
+      console.log(sub);
+       setMenuData(sub);
+    }
     const allInOne=()=>{
 setMenuData(Menu);
     }
@@ -43,7 +44,7 @@ setMenuData(Menu);
     <button >Card</button>
     <button onClick={()=>{allInOne()}}>All</button>
     <button >HiToLow</button>
-    <button>LowToHigh</button>
+    <button onClick={()=>{lowToHigh()}}>LowToHigh</button>
     <button >Filter&Sort</button>
     <button >4StarAboveinDes</button>
     <button onClick={()=>filterItem("breakfast")} >Breakfast</button>
