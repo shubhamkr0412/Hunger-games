@@ -10,7 +10,10 @@ function App() {
   }
   return (
     <>
-    <div className='container'> <div className="inside"><button onClick={()=>{showHome}}>Home</button></div>
+    <div className='container'> <div className="inside"><button onClick={()
+    
+    
+    =>{showHome}}>Home</button></div>
     <div  className="inside"><button onClick={showItem}>flights</button></div>
     <div  className="inside"><button>Hotels</button></div>
     <div  className="inside"><button>About</button></div></div>

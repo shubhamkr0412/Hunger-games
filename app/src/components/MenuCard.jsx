@@ -1,7 +1,7 @@
 import React from 'react'
 import "../App.css"
 const MenuCard = ({menuData}) => {
-    console.log(menuData)
+
   return (
    <>
    <div className='container'>
@@ -14,10 +14,10 @@ const MenuCard = ({menuData}) => {
     
     <div className='inside' key={curr.id}>
        
-        <p className='items'>{curr.name}</p>
-        <p className='items'>{curr.category}</p>
-        <p className='items'>{curr.price}</p>
-        <p className='items'>{curr.rating}</p>
+        <p className='items'><span>Name:</span>{curr.name}</p>
+        <p className='items'><span>Category:</span>{curr.category}</p>
+        <p className='items'><span>Price:</span>{curr.price}</p>
+        <p className='items'><span>Rating:</span>{curr.rating}</p>
        
     </div>
    

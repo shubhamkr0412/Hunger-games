@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "../App.css"
 import Menu from './RestaurantApi'
 import MenuCard from './MenuCard'
 import { useState } from 'react'
@@ -12,8 +12,16 @@ const Restaurant = () => {
         return currElem.category===category;
       })
       setMenuData(updatedList);
-      console.log(updatedList)
+     
     }
+    const filterSort=(rating)=>{
+      const updatedList= Menu.filter((currElem)=>{
+         return currElem.rating>rating;
+       })
+       updatedList.sort((a,b)=>(b.price-a.price));
+       setMenuData(updatedList);
+      
+     }
 
     const starItem=(rating)=>{
       const starList= Menu.filter((currElem)=>{
@@ -23,9 +31,18 @@ const Restaurant = () => {
       
      }
     const lowToHigh=()=>{
-      const sub=Menu.price.sort((a,b)=>(a.price-b.price));
-      console.log(sub);
-       setMenuData(sub);
+      var bob=[...Menu];
+      console.log(bob);
+    bob.sort((a,b)=>(a.price-b.price));
+   
+      setMenuData(bob);
+    }
+    const highToLow=()=>{
+      var mob=[...Menu];
+      
+    mob.sort((a,b)=>(b.price-a.price));
+   
+      setMenuData(mob);
     }
     const allInOne=()=>{
 setMenuData(Menu);
@@ -35,17 +52,17 @@ setMenuData(Menu);
   return (
 
     <>
-    <div >
-    <button onClick={()=>starItem(1)} >1Star</button>
+    <div className='btn' >
+    <button  onClick={()=>starItem(1)} >1Star</button>
     <button onClick={()=>starItem(2)}>2Star</button>
     <button onClick={()=>starItem(3)}>3Star</button>
     <button onClick={()=>starItem(4)} >4Star</button>
     <button >Cash</button>
     <button >Card</button>
     <button onClick={()=>{allInOne()}}>All</button>
-    <button >HiToLow</button>
+    <button onClick={()=>{highToLow()}} >HiToLow</button>
     <button onClick={()=>{lowToHigh()}}>LowToHigh</button>
-    <button >Filter&Sort</button>
+    <button onClick={()=>filterSort(4)}>Filter&Sort</button>
     <button >4StarAboveinDes</button>
     <button onClick={()=>filterItem("breakfast")} >Breakfast</button>
     <button onClick={()=>filterItem("lunch")}>Lunch</button>
