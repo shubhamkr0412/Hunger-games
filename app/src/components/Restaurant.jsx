@@ -52,24 +52,26 @@ setMenuData(Menu);
   return (
 
     <>
-    <div className='btn' >
-    <button  onClick={()=>starItem(1)} >1Star</button>
-    <button onClick={()=>starItem(2)}>2Star</button>
-    <button onClick={()=>starItem(3)}>3Star</button>
-    <button onClick={()=>starItem(4)} >4Star</button>
-    <button >Cash</button>
-    <button >Card</button>
-    <button onClick={()=>{allInOne()}}>All</button>
-    <button onClick={()=>{highToLow()}} >HiToLow</button>
-    <button onClick={()=>{lowToHigh()}}>LowToHigh</button>
-    <button onClick={()=>filterSort(4)}>Filter&Sort</button>
-    <button >4StarAboveinDes</button>
-    <button onClick={()=>filterItem("breakfast")} >Breakfast</button>
-    <button onClick={()=>filterItem("lunch")}>Lunch</button>
-    <button onClick={()=>filterItem("dinner")}>Dinner</button>
-  </div>
-  
-<MenuCard menuData={menuData} />
+    <div className='back'><div className='btn' >
+
+<button  onClick={()=>starItem(1)} >1Star</button>
+<button onClick={()=>starItem(2)}>2Star</button>
+<button onClick={()=>starItem(3)}>3Star</button>
+<button onClick={()=>starItem(4)} >4Star</button>
+<button >Cash</button>
+<button >Card</button>
+<button onClick={()=>{allInOne()}}>All</button>
+<button onClick={()=>{highToLow()}} >HiToLow</button>
+<button onClick={()=>{lowToHigh()}}>LowToHigh</button>
+<button onClick={()=>filterSort(4)}>Filter&Sort</button>
+<button >4StarAboveinDes</button>
+<button onClick={()=>filterItem("breakfast")} >Breakfast</button>
+<button onClick={()=>filterItem("lunch")}>Lunch</button>
+<button onClick={()=>filterItem("dinner")}>Dinner</button>
+</div>
+
+<MenuCard menuData={menuData} /></div>
+    
     </>
   )
 }
