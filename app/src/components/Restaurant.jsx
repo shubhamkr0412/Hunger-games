@@ -52,7 +52,8 @@ setMenuData(Menu);
   return (
 
     <>
-    <div className='back'><div className='btn' >
+    <div className='back'>
+    <div className='btn' >
 
 <button  onClick={()=>starItem(1)} >1Star</button>
 <button onClick={()=>starItem(2)}>2Star</button>
